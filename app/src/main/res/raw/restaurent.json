@@ -1,0 +1,140 @@
+[
+    {
+      "name":"Almacen de pizza",
+      "dirección":"Av.Cerviño 3732",
+      "delivery_charge": 70,
+      "image":"data:image/png;base64,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",
+
+      "hours":{
+        "Sunday":"11:00 AM - 7:00 PM",
+        "Monday":"10:00 AM - 9:00 PM",
+        "Tuesday":"10:00 AM - 10:00 PM",
+        "Wednesday":"10:00 AM - 11:00 PM",
+        "Thursday":"10:00 AM - 10:00 PM",
+        "Friday":"10:00 AM - 11:00 PM",
+        "Saturday":"10:00 AM - 2:00 PM"
+      },
+      "menus": [
+        {
+          "name": "Pizza muzzarella",
+          "price": 750,
+          "url": "https://betos.com.ar/wp-content/uploads/2019/08/pizza-muzarella.png"
+        },
+        {
+          "name": "Pizza con huevo duro",
+          "price": 990,
+          "url": "https://www.crazycheese.com.ar/wp-content/uploads/2018/10/Jamon-y-huevo.jpg"
+        },
+        {
+          "name": "Pizza de Pepperoni",
+          "price": 990,
+          "url": "https://media.istockphoto.com/photos/pizza-pepperoni-picture-id666152944"
+        },
+        {
+          "name": "Pizza Napolitana",
+          "price": 990,
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0xGWk58Z-ZzMcLSO61PeJCAPDYs2lR0Nxw&usqp=CAU"
+        },
+        {
+          "name": "Pizza Siciliana",
+          "price": 990,
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmTiR5SgmINJXXATFZB7cQWD7M3f7k7SB9_Q&usqp=CAU"
+        },
+        {
+          "name": "Pizza Chicago",
+          "price": 1000,
+          "url": "https://i0.wp.com/depizza.net/wp-content/uploads/2020/11/Pizza-Estilo-Chicago-Lista.jpg?resize=1024%2C576&ssl=1"
+        },
+        {
+          "name": "Pizza panceta y huevo",
+          "price": 1000,
+          "url": "https://images.deliveryhero.io/image/pedidosya/products/244737-1bd7120f-6492-4e7b-8677-ce98141de60b.jpg?quality=80&width=200"
+        },
+        {
+          "name": "Pizza manolo y francesa",
+          "price": 1100,
+          "url": "https://images.deliveryhero.io/image/pedidosya/products/cf4b6ecb-5a33-45cf-a816-0f773100a43a.jpg?quality=80&width=500"
+        },
+        {
+          "name": "Docena de empanadas",
+          "price": 1300,
+          "url": "https://images.deliveryhero.io/image/pedidosya/products/f34f00e4-af34-4d8d-97e5-9f51aeb8ffa0.jpg?quality=80&width=200"
+        },
+        {
+          "name": "Media docena de empanadas",
+          "price": 680,
+          "url": "https://images.deliveryhero.io/image/pedidosya/products/49ddd3ef-3a4f-4859-b8c5-cbed7cc95853.jpg?quality=80&width=500"
+        }
+      ]
+    },
+  {
+    "name":"Almacen de pizza",
+    "dirección":"French 2301",
+    "delivery_charge": 100,
+    "image":"data:image/png;base64,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",
+
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 9:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 11:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 11:00 PM",
+      "Saturday":"10:00 AM - 2:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Pizza muzzarella",
+        "price": 750,
+        "url": "https://betos.com.ar/wp-content/uploads/2019/08/pizza-muzarella.png"
+      },
+      {
+        "name": "Pizza con huevo duro",
+        "price": 990,
+        "url": "https://www.crazycheese.com.ar/wp-content/uploads/2018/10/Jamon-y-huevo.jpg"
+      },
+      {
+        "name": "Pizza de Pepperoni",
+        "price": 990,
+        "url": "https://media.istockphoto.com/photos/pizza-pepperoni-picture-id666152944"
+      },
+      {
+        "name": "Pizza Napolitana",
+        "price": 990,
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0xGWk58Z-ZzMcLSO61PeJCAPDYs2lR0Nxw&usqp=CAU"
+      },
+      {
+        "name": "Pizza Siciliana",
+        "price": 990,
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmTiR5SgmINJXXATFZB7cQWD7M3f7k7SB9_Q&usqp=CAU"
+      },
+      {
+        "name": "Pizza Chicago",
+        "price": 1000,
+        "url": "https://i0.wp.com/depizza.net/wp-content/uploads/2020/11/Pizza-Estilo-Chicago-Lista.jpg?resize=1024%2C576&ssl=1"
+      },
+      {
+        "name": "Pizza panceta y huevo",
+        "price": 1000,
+        "url": "https://images.deliveryhero.io/image/pedidosya/products/244737-1bd7120f-6492-4e7b-8677-ce98141de60b.jpg?quality=80&width=200"
+      },
+      {
+        "name": "Pizza manolo y francesa",
+        "price": 1100,
+        "url": "https://images.deliveryhero.io/image/pedidosya/products/cf4b6ecb-5a33-45cf-a816-0f773100a43a.jpg?quality=80&width=500"
+      },
+      {
+        "name": "Docena de empanadas",
+        "price": 1300,
+        "url": "https://images.deliveryhero.io/image/pedidosya/products/f34f00e4-af34-4d8d-97e5-9f51aeb8ffa0.jpg?quality=80&width=200"
+      },
+      {
+        "name": "Media docena de empanadas",
+        "price": 680,
+        "url": "https://images.deliveryhero.io/image/pedidosya/products/49ddd3ef-3a4f-4859-b8c5-cbed7cc95853.jpg?quality=80&width=500"
+      }
+    ]
+  }
+
+
+]

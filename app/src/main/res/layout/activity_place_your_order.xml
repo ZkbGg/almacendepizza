@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceYourOrderActivity"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView android:id="@+id/tvCustomerDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            android:text="Detalles Cliente"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/switchDelivery"
+           app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:text="retirar local"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/switchDelivery"
+            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:text="Delivery"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchDelivery"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Ingresa tu nombre completo"/>
+
+        <EditText android:id="@+id/inputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Ingresa tu dirección"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Ingresa tu ciudad"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputCity"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Ingresa tu provincia"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputZip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputState"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Ingresa tu codigo postal"
+            android:inputType="number"
+            android:maxLength="5"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvCardDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Detalles tarjeta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputZip" />
+
+        <TextView
+            android:id="@+id/tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardDetails"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Numero de tarjeta"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tarjeta"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Fecha de vencimiento"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputCardPin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Ingresa el CVV(3 digitos)"
+            android:inputType="number"
+            android:maxLength="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fecha"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTotalItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Detalles de la compra"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cartItemsRecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputCardPin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartItemsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalItems" />
+
+        <TextView android:id="@+id/tvSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
+            android:layout_margin="10dp"
+            android:text="Sub total"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvSubtotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
+            android:layout_margin="10dp"
+            android:text="$0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvDeliveryCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
+            android:layout_margin="10dp"
+            android:text="Cargo delivery"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvDeliveryChargeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
+            android:layout_margin="10dp"
+            android:text="$0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
+            android:layout_margin="10dp"
+            android:text="Total"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
+            android:layout_margin="10dp"
+            android:text="$0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/buttonPlaceYourOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotal"
+            android:text="Hace tu pedido"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="Escanear"
+            android:onClick="scanearTarjeta"
+            app:layout_constraintBottom_toTopOf="@+id/cartItemsRecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTotalItems"
+            app:layout_constraintTop_toTopOf="@+id/inputCardPin"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
